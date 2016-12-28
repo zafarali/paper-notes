@@ -14,6 +14,7 @@ Notes from deep learning papers and courses.
 ### Generative Adverserial Networks
 
 - [ ] [Generative Adversarial Nets](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
+- [ ] [Conditional Generative Adversarial Networks](https://arxiv.org/pdf/1411.1784v1.pdf)
 - [ ] [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://arxiv.org/pdf/1511.06434v2.pdf)
 - [ ] [Conditional generative adversarial nets for convolutional face generation](http://www.foldl.me/uploads/papers/tr-cgans.pdf)
 - [ ] [Automatic Colorization with Deep Convolutional Generative Adversarial Networks](http://cs231n.stanford.edu/reports2016/224_Report.pdf)
