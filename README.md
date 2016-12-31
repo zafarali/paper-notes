@@ -1,6 +1,6 @@
 # deep-notes
 
-Notes from deep learning papers and courses.
+Notes from deep learning papers and courses. Inspired by [dennybritz/deeplearning-papernotes](https://github.com/dennybritz/deeplearning-papernotes).
 
 ## To Read:
 
@@ -24,7 +24,7 @@ Notes from deep learning papers and courses.
 
 - [ ] DeepCancer: Detecting Cancer through Gene Expressions via Deep Generative Learning
 - [ ] Creating a universal SNP and small indel variant caller with deep neural networks
-- [ ] Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records.
+- [x] Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records.
 
 ## Courses:
 
