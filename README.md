@@ -23,7 +23,7 @@ Notes from deep learning papers and courses. Inspired by [dennybritz/deeplearnin
 ### Computational Biology
 
 - [ ] DeepCancer: Detecting Cancer through Gene Expressions via Deep Generative Learning
-- [ ] Creating a universal SNP and small indel variant caller with deep neural networks
+- [x] Creating a universal SNP and small indel variant caller with deep neural networks
 - [x] Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records.
 - [ ] Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs
 
