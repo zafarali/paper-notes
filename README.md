@@ -13,16 +13,19 @@ Notes from deep learning papers and courses. Inspired by [dennybritz/deeplearnin
 
 ### Generative Adverserial Networks
 
-- [ ] [Generative Adversarial Nets](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
+- [x] [Generative Adversarial Nets](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
 - [ ] [Conditional Generative Adversarial Networks](https://arxiv.org/pdf/1411.1784v1.pdf)
 - [ ] [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://arxiv.org/pdf/1511.06434v2.pdf)
 - [ ] [Conditional generative adversarial nets for convolutional face generation](http://www.foldl.me/uploads/papers/tr-cgans.pdf)
 - [ ] [Automatic Colorization with Deep Convolutional Generative Adversarial Networks](http://cs231n.stanford.edu/reports2016/224_Report.pdf)
 
+### Reinforcement Learning
+
+- [x] [TOWARDS INFORMATION-SEEKING AGENTS](https://arxiv.org/pdf/1612.02605v1.pdf)
 
 ### Computational Biology
 
-- [ ] DeepCancer: Detecting Cancer through Gene Expressions via Deep Generative Learning
+- [x] DeepCancer: Detecting Cancer through Gene Expressions via Deep Generative Learning
 - [x] Creating a universal SNP and small indel variant caller with deep neural networks
 - [x] Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records.
 - [ ] Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs
