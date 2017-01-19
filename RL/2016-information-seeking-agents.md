@@ -2,7 +2,7 @@
 * Philip Bachman, Alessandro Sordoni, Adam Trischler *
 
 
-TLDR: 
+TLDR: Deep Networks are used to learn policies that allow agents to query environments and make decisions in a step towards generalized artifical intelligence. Objectives are formulated on reward functions that result in models learning to ask better questions.
 
 ## Method
 
@@ -14,7 +14,7 @@ The key contribution here is the objective and how to think about it.
 
 Formulated as a sequential decision making problem where at each step, we have all the information collected so far to ask the next best question. 
 
-* Information-seeking objective: * Encourage questions that are most likely to reduce error in model predictions. 
+* Information-seeking objective:  Encourage questions that are most likely to reduce error in model predictions. 
 
 Overall objective:
 
@@ -22,7 +22,7 @@ Overall objective:
 
 Basically, we are maximizing over the parameters (policy) that can ask questions about a datapoint in `(x,y)~D` that can maximize a reward function that is based on the belief of the world `f_theta`.
 
-* Example: * `(x,y)` is an image and annotation. A possible question `q_t` could be a small window from `x`. The observation function `O(x, q_t)` will return the value of those pixels. `R_t` is log-likelihood that `f_theta` assigns to the true value of `y` once it has observed the answers to questions `q_1, ... , q_t`.
+* Example: `(x,y)` is an image and annotation. A possible question `q_t` could be a small window from `x`. The observation function `O(x, q_t)` will return the value of those pixels. `R_t` is log-likelihood that `f_theta` assigns to the true value of `y` once it has observed the answers to questions `q_1, ... , q_t`.
 
 ### Training
 
@@ -39,9 +39,8 @@ Train gradient wrto policy using Generalized Advantage Estimation (GAE) which tr
 
 Separate reward function into two parts: extrinsic and intrinsic.
 
-* Extrinsic: * incorporation of external feedback eg: performance metrics, cross entropy functions.
-
-* Intrinsic: * task-agnostic metric that drives curiosity to ask better questions. Authors use cross-entropy using q(x|f_theta) which encorages model to form a better belief about D.
+* Extrinsic:  incorporation of external feedback eg: performance metrics, cross entropy functions.
+* Intrinsic:  task-agnostic metric that drives curiosity to ask better questions. Authors use cross-entropy using q(x|f_theta) which encorages model to form a better belief about D.
 
 (!) Each question is rewarded by the difference between the reward from all previously asked questions and the reward from then asking the new quesstion `q_t`. This favours questions that exploit more information from the world.
 
@@ -49,11 +48,11 @@ Separate reward function into two parts: extrinsic and intrinsic.
 
 The policy `pi`, belief `f` and value estimates `V` are based on deep neural networks with shared parameters. The inputs are a *table* tuples of `(qrepr, qansr)`. `qrepr` represents which question was asked, `qansr` represents the answer. The neural networks take in all questions observed so far and feed them through the hidden layers. 
 
-** image analysis: ** they use two networks (bottom-up and top-down). The **bottom-up** uses conv nets for sumarize a **masked** image into `V` and the label `f_y`. For last layer they use LSTM which stores the internal representation between steps. The **Top-down** network takes input the last layer of the bottom-up and does *layer integration* between the two networks. The output of the top-down network is the reconstructed image `f_x` and a policy `pi`. Iterestingly, this network simulatenously learns to query and reconstruct the image.
+* image analysis: they use two networks (bottom-up and top-down). The **bottom-up** uses conv nets for sumarize a **masked** image into `V` and the label `f_y`. For last layer they use LSTM which stores the internal representation between steps. The **Top-down** network takes input the last layer of the bottom-up and does *layer integration* between the two networks. The output of the top-down network is the reconstructed image `f_x` and a policy `pi`. Iterestingly, this network simulatenously learns to query and reconstruct the image.
 
-** general architecture: ** input is now an masked observation vector and a mask vector indicating features requested by model. All outputs `f_x,f_y, V, pi` are computed from the final layer of the network.
+* general architecture:  input is now an masked observation vector and a mask vector indicating features requested by model. All outputs `f_x,f_y, V, pi` are computed from the final layer of the network.
 
-** other information **
+* other information
 - ADAM Optimizer
 - Batch norm
 - Leaky Relu
