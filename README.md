@@ -9,7 +9,7 @@ Notes from deep learning papers and courses. Inspired by [dennybritz/deeplearnin
 - [ ] [Deconvolution Networks](http://www.matthewzeiler.com/pubs/cvpr2010/cvpr2010.pdf)
 - [ ] [Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
 - [ ] [Tiny ImageNet Classification](http://cs231n.stanford.edu/reports/leonyao_final.pdf)
-
+- [x] [PixelRNN](https://arxiv.org/abs/1601.06759)
 
 ### Generative Adverserial Networks
 
