@@ -11,7 +11,7 @@ Richard Evans, David Saxton, David Amos, Pushmeet Kohli, Edward Grefenstette (IC
 
 ## Proposed model (possible worlds net):
 
-1. The authors work on a relaxation of a "semantic notion" of entailment. so basically what the model does is that it has a bunch of vectors which it uses as a "representation of the world" in which a logical statement can be evaluated.  I think this is the kind of stuff Tim wants to head toward, semantically inspired architectures and encouraging it works really well.  It solves all test sets to near perfection > 95% and gets 73% on the "massive test set"
+1. The authors work on a relaxation of a "semantic notion" of entailment. so basically what the model does is that it has a bunch of vectors which it uses as a "representation of the world" in which a logical statement can be evaluated.  Semantically inspired architectures are encouraging that it works well.  It solves all test sets to near perfection > 95% and gets 73% on the "massive test set"
 2. they indicate that there is no constraint on this architecture for propositional logic and can be extended to other logic including natural language sentences (which I'm assuming includes natural logic)
 
 ## Some potential issues
